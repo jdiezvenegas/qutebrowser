@@ -207,16 +207,17 @@ c.tabs.select_on_remove = "prev"
 # used by prepending the search engine name to the search term, e.g.
 # `:open google qutebrowser`.
 c.url.searchengines = {
-"DEFAULT": "https://you.com/search?q={}&fromSearchBar=true",
+"DEFAULT":'https://duckduckgo.com/?q={}&hps=1&start=1&ia=web',
+"y" : "https://you.com/search?q={}&fromSearchBar=true",
 "g" : "https://www.google.es/search?q={}",
-"y" : "https://www.youtube.com/results?search_query={}",
 "d" : "https://duckduckgo.com/?ia=web&q={}",
 "r" : "https://www.reddit.com/search?q={}",
 "d" : "https://dle.rae.es/{}",
 "w" : "https://en.wikipedia.org/wiki/{}",
 "m" : "https://www.openstreetmap.org/search?query={}",
 "gi" : "https://www.google.com/search?tbm=isch&q={}&tbs=imgo:1",
-"gh" : "https://github.com/search?q={}"
+"gh" : "https://github.com/search?q={}",
+"yt" : "https://www.youtube.com/results?search_query={}"
 }
 # The format to use for the window title. The following placeholders are
 # defined:
@@ -356,8 +357,7 @@ c.colors.completion.scrollbar.bg =  "#1E1E1E"
 c.colors.completion.scrollbar.fg = "#D4D4D4"
 
 ## Background color for the download bar.
-c.colors.downloads.bar.bg = "#1E1E1E"
-
+c.colors.downloads.bar.bg = '#608B4E'
 ## Background color for downloads with errors.
 c.colors.downloads.error.bg = "#1E1E1E"
 
@@ -431,7 +431,7 @@ c.colors.prompts.bg = "#1E1E1E"
 c.colors.prompts.border = '1px solid ' + "#202020"
 
 ## Foreground color for prompts.
-c.colors.prompts.fg = "#569CD6"
+c.colors.prompts.fg = 'white' #"#569CD6"
 
 ## Background color for the selected item in filename prompts.
 c.colors.prompts.selected.bg = "#303030"
@@ -461,10 +461,10 @@ c.colors.statusbar.command.private.bg = "#1E1E1E"
 c.colors.statusbar.command.private.fg = "#C586C0"
 
 ## Background color of the statusbar in insert mode.
-c.colors.statusbar.insert.bg = "goldenrod" #"#DCDCAA"
+c.colors.statusbar.insert.bg = "#68217A" #"#DCDCAA"
 
 ## Foreground color of the statusbar in insert mode.
-c.colors.statusbar.insert.fg = "#000000"  #"#1E1E1E"
+c.colors.statusbar.insert.fg = "#FFFFFF"  #"#1E1E1E"
 
 ## Background color of the statusbar.
 c.colors.statusbar.normal.bg = "#1E1E1E"
@@ -592,3 +592,10 @@ c.colors.contextmenu.selected.bg = "#608B4E" # "#569CD6"
 
 ## Foreground color of selected item in context menu
 c.colors.contextmenu.selected.fg = "black" #"#1E1E1E"
+
+c.colors.downloads.bar.bg = 'gainsboro'
+c.colors.downloads.stop.bg = 'gainsboro'
+c.colors.downloads.stop.fg = '#000000'
+c.colors.downloads.start.bg= 'gainsboro'
+c.colors.downloads.start.fg= 'black'
+c.colors.statusbar.normal.fg = 'gainsboro'
